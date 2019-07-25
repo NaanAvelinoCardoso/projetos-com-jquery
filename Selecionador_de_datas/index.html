@@ -5,34 +5,38 @@
 	<title>Titulo</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<style type="text/css">
-		.div {
-			height: 500px;
-			width: 500px;
-			background-color: #DDD;
-		}	
+		.horaescolha {
+			height: 50px;
+			width: 300px;
+			color: #fff;
+			position: absolute;
+			display: none;
+		}
 	</style>
 </head>
 <body>
 
-	<h1 class="text-center border p-4">Calculadora de IMC</h1>
+	Hora 1: <br>
+	<input type="text" name="hora1"><br><br>
 
-	<div class="container text-center mt-4">
+	Hora 2: <br>
+	<input type="text" name="hora2"><br><br>
 
-	Altura em metros (EX: 1,70 metros) <br>				
-	<input type="text" name="altura" id="altura" data-mask="0,00"><br><br>
+	Hora 3: <br>
+	<input type="text" name="hora3"><br><br>
 
-	Peso em quilos <br>
-	<input type="text" name="peso" id="peso"><br><br>
+	Hora 4: <br>
+	<input type="text" name="hora4"><br><br>
 
-	<button class="btn btn-success">Calcular IMC</button><br><br>
-
-	<div id="resultado"></div>
-
+	<div class="horaescolha">
+		<button class="btn border-dark">10:00</button>
+		<button class="btn border-dark">12:00</button>
+		<button class="btn border-dark">15:00</button>
+		<button class="btn border-dark">17:00</button>
 	</div>
 
 	<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>
-	<script type="text/javascript" src="jquery.mask.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>

@@ -5,34 +5,40 @@
 	<title>Titulo</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<style type="text/css">
-		.div {
-			height: 500px;
-			width: 500px;
-			background-color: #DDD;
-		}	
+		.bgbox {
+			position: fixed;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.7);
+			display:none;
+		}
+		.divbox {
+			position:fixed;
+                left:50%;
+                top:50%;
+                padding:20px; 
+                padding-bottom:40px;
+                background-color:#FFF;
+                display:none;
+		}
 	</style>
 </head>
 <body>
+	
+	<a href="javascript:;" class="galeria"><img src="image1.jpg" border="0" width="150"></a>
+	<a href="javascript:;" class="galeria"><img src="image2.jpg" border="0" width="150"></a>
 
-	<h1 class="text-center border p-4">Calculadora de IMC</h1>
+	<div class="bgbox"></div>
+	<div class="divbox">
+		<img src="" border="0" width="100%">
 
-	<div class="container text-center mt-4">
-
-	Altura em metros (EX: 1,70 metros) <br>				
-	<input type="text" name="altura" id="altura" data-mask="0,00"><br><br>
-
-	Peso em quilos <br>
-	<input type="text" name="peso" id="peso"><br><br>
-
-	<button class="btn btn-success">Calcular IMC</button><br><br>
-
-	<div id="resultado"></div>
-
+		<button class="btn btn-danger">Fechar</button>
 	</div>
 
 	<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>
-	<script type="text/javascript" src="jquery.mask.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
